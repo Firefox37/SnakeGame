@@ -26,7 +26,7 @@ public class SnakeWrap extends Snake
         if(canMove())
         {
             moveTo(loc1);
-            SnakeTail bob = new SnakeTail();
+            SnakeTail bob = new SnakeTail(getDirection());
             bob.putSelfInGrid(grid, loc);
             tails.add(0,bob);
             if(containsFood())

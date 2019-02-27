@@ -34,9 +34,9 @@ public class SnakeWrapWorld extends ActorWorld
         grid = getGrid();
         highscore = high.getScore();
         dude.putSelfInGrid(grid,new Location(grid.getNumRows()/2 ,grid.getNumRows()/2 ));
-        SnakeTail bob1 = new SnakeTail();
-        SnakeTail bob2 = new SnakeTail();
-        SnakeTail bob3 = new SnakeTail();
+        SnakeTail bob1 = new SnakeTail(90);
+        SnakeTail bob2 = new SnakeTail(90);
+        SnakeTail bob3 = new SnakeTail(90);
         bob1.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumRows()/2-1)); dude.addTail(bob1);
         bob2.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumCols()/2-2)); dude.addTail(bob2);
         bob3.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumCols()/2-3)); dude.addTail(bob3);
@@ -72,8 +72,13 @@ public class SnakeWrapWorld extends ActorWorld
             dude.setDirection(180);
         if(description.equals("ctrl Q")&&dude.getGrid().isValid(dude.getLocation().getAdjacentLocation(Location.SOUTH)))
             dude.easterEgg();
-        if(description.equals("SPACE")&&!playing)
-            timer.start();
+        if(description.equals("SPACE"))
+        {
+            if(timer.isRunning())
+                timer.stop();
+            else
+                timer.start();
+        }
         return true;
     }
 
@@ -96,7 +101,7 @@ public class SnakeWrapWorld extends ActorWorld
                 high.main(dude.getScore());
                 clearBoard();
                 getFrame().dispose();
-                new SnakeGameWorld(grid,speed2,gridS).show();
+                new SnakeWrapWorld(grid,speed2,gridS).show();
             }
             else
             {

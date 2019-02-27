@@ -42,7 +42,7 @@ public class Snake extends Bug
         if(canMove())
         {
             moveTo(loc1);
-            SnakeTail bob = new SnakeTail();
+            SnakeTail bob = new SnakeTail(getDirection());
             bob.putSelfInGrid(grid, loc);
             tails.add(0,bob);
             if(containsFood())

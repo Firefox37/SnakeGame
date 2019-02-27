@@ -11,8 +11,9 @@ import info.gridworld.actor.Rock;
 
 public class SnakeTail extends Rock
 {
-    public SnakeTail()
+    public SnakeTail(int dir)
     {
         setColor(Color.GRAY);
+        setDirection(dir);
     }
 }

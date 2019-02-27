@@ -34,9 +34,9 @@ public class SnakeGameWorld extends ActorWorld
         grid = getGrid();
         highscore = high.getScore();
         dude.putSelfInGrid(grid,new Location(grid.getNumRows()/2 ,grid.getNumRows()/2 ));
-        SnakeTail bob1 = new SnakeTail();
-        SnakeTail bob2 = new SnakeTail();
-        SnakeTail bob3 = new SnakeTail();
+        SnakeTail bob1 = new SnakeTail(90);
+        SnakeTail bob2 = new SnakeTail(90);
+        SnakeTail bob3 = new SnakeTail(90);
         bob1.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumRows()/2-1)); dude.addTail(bob1);
         bob2.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumCols()/2-2)); dude.addTail(bob2);
         bob3.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumCols()/2-3)); dude.addTail(bob3);
