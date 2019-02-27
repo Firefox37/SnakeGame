@@ -23,7 +23,7 @@ public class SnakeGameWorld extends ActorWorld
     HighScore high;
     public SnakeGameWorld(Grid<Actor> grd, int speed, int gridSize)
     {
-        
+
         super(grd);
         high = new HighScore();
         //make a super call
@@ -40,7 +40,7 @@ public class SnakeGameWorld extends ActorWorld
         bob1.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumRows()/2-1)); dude.addTail(bob1);
         bob2.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumCols()/2-2)); dude.addTail(bob2);
         bob3.putSelfInGrid(grid,new Location(grid.getNumRows()/2,grid.getNumCols()/2-3)); dude.addTail(bob3);
-        setMessage("Snake Game! Use Arrow Keys to control the Snake! \nPress Space to Play!");
+        setMessage("Snake Game! Use Arrow Keys to control the Snake! \nPress Space to Play!  If you want to pause press Space.");
         int r = (int)(Math.random() * grid.getNumRows());
         int c = (int)(Math.random() * grid.getNumRows());
         Location loc = new Location(r,c);
@@ -72,8 +72,13 @@ public class SnakeGameWorld extends ActorWorld
             dude.setDirection(180);
         if(description.equals("ctrl Q")&&dude.getGrid().isValid(dude.getLocation().getAdjacentLocation(Location.SOUTH)))
             dude.easterEgg();
-        if(description.equals("SPACE")&&!playing)
-            timer.start();
+        if(description.equals("SPACE"))
+        {
+            if(timer.isRunning())
+                timer.stop();
+            else
+                timer.start();
+        }
         return true;
     }
 
