@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=parent\ resources\ displayMap
+comment0.target=MenuMaker(WorldFrame,\ java.util.ResourceBundle,\ DisplayMap)
+comment0.text=\r\n\ Constructs\ a\ menu\ maker\ for\ a\ given\ world.\r\n\ @param\ parent\ the\ frame\ in\ which\ the\ world\ is\ displayed\r\n\ @param\ resources\ the\ resource\ bundle\r\n\ @param\ displayMap\ the\ display\ map\r\n
+comment1.params=occupant\ loc
+comment1.target=javax.swing.JPopupMenu\ makeMethodMenu(java.lang.Object,\ info.gridworld.grid.Location)
+comment1.text=\r\n\ Makes\ a\ menu\ that\ displays\ all\ public\ methods\ of\ an\ object\r\n\ @param\ occupant\ the\ object\ whose\ methods\ should\ be\ displayed\r\n\ @param\ loc\ the\ location\ of\ the\ occupant\r\n\ @return\ the\ menu\ to\ pop\ up\r\n
+comment2.params=classes\ loc
+comment2.target=javax.swing.JPopupMenu\ makeConstructorMenu(java.util.Collection,\ info.gridworld.grid.Location)
+comment2.text=\r\n\ Makes\ a\ menu\ that\ displays\ all\ public\ constructors\ of\ a\ collection\ of\r\n\ classes.\r\n\ @param\ classes\ the\ classes\ whose\ constructors\ should\ be\ displayed\r\n\ @param\ loc\ the\ location\ of\ the\ occupant\ to\ be\ constructed\r\n\ @return\ the\ menu\ to\ pop\ up\r\n
+comment3.params=menu\ classes
+comment3.target=void\ addConstructors(javax.swing.JMenu,\ java.util.Collection)
+comment3.text=\r\n\ Adds\ menu\ items\ that\ call\ all\ public\ constructors\ of\ a\ collection\ of\r\n\ classes\ to\ a\ menu\r\n\ @param\ menu\ the\ menu\ to\ which\ the\ items\ should\ be\ added\r\n\ @param\ classes\ the\ collection\ of\ classes\r\n
+comment4.params=
+comment4.target=java.lang.reflect.Method[]\ getMethods()
+comment5.params=m1\ m2
+comment5.target=int\ compare(java.lang.reflect.Method,\ java.lang.reflect.Method)
+comment6.params=cl
+comment6.target=int\ depth(java.lang.Class)
+numComments=7

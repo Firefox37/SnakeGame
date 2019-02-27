@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ main()
+comment1.params=
+comment1.target=int\ showFirstMenu()
+comment2.params=
+comment2.target=int\ showSecondMenu()
+comment3.params=
+comment3.target=void\ showErrorMenu()
+comment4.params=
+comment4.target=void\ showPlayScreen()
+comment5.params=
+comment5.target=boolean\ showWrapMessage()
+numComments=6

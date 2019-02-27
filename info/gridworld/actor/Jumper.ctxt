@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Jumper()
+comment1.params=color
+comment1.target=Jumper(java.awt.Color)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Moves\ if\ it\ can\ move,\ turns\ otherwise.\n
+comment3.params=
+comment3.target=void\ turn()
+comment3.text=\n\ Turns\ the\ jumper\ 45\ degrees\ to\ the\ right\ without\ changing\ its\ location.\n
+comment4.params=
+comment4.target=void\ move()
+comment4.text=\n\ Moves\ the\ jumper\ forward\ 2\ spaces\n
+comment5.params=
+comment5.target=boolean\ canMove()
+comment5.text=\n\ Tests\ whether\ this\ jumper\ can\ move\ forward\ into\ a\ location\ that\ is\ empty\ or\n\ contains\ anything\ but\ a\ rock.\n\ @return\ true\ if\ this\ jumper\ can\ move.\n
+numComments=6

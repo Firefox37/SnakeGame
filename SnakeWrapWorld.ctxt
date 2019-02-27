@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=grd\ speed\ gridSize
+comment0.target=SnakeWrapWorld(info.gridworld.grid.Grid,\ int,\ int)
+comment1.params=evt
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=description\ loc
+comment2.target=boolean\ keyPressed(java.lang.String,\ info.gridworld.grid.Location)
+comment3.params=
+comment3.target=void\ step()
+comment4.params=
+comment4.target=void\ doPlay()
+comment5.params=s
+comment5.target=int\ calculateSpeed(int)
+comment6.params=
+comment6.target=void\ clearBoard()
+numComments=7

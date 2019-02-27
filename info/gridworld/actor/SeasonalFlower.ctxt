@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SeasonalFlower()
+comment0.text=\n\ \n
+comment1.params=initialColor
+comment1.target=SeasonalFlower(java.awt.Color)
+comment1.text=\n\ @param\ initialColor\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\ (non-Javadoc)\n\ @see\ info.gridworld.actor.Flower\#act()\n
+numComments=3
