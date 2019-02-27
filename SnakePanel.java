@@ -111,6 +111,7 @@ public class SnakePanel extends JFrame implements ActionListener
                 test = new SnakeGameWorld(new BoundedGrid<Actor>(size,size),speed,size);
             else
                 test = new SnakeWrapWorld(new BoundedGrid<Actor>(size,size),speed,size);
+            showPlayScreen();
             test.show();
         }
     }
@@ -121,6 +122,15 @@ public class SnakePanel extends JFrame implements ActionListener
             "Please enter an Integer value from 10-100 for Grid-Size Selection.",
             "Snake Game Error",
             JOptionPane.ERROR_MESSAGE);
+    }
+
+    public static void showPlayScreen()
+    {
+        ImageIcon icon = new ImageIcon("metal-info.png");
+        JOptionPane.showMessageDialog(null,
+            "Get ready to play Snake Game now!",
+            "Snake Game Play",
+            JOptionPane.INFORMATION_MESSAGE, icon);
     }
 
     public static void main()
